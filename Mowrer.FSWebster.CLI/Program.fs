@@ -1,10 +1,8 @@
 ﻿namespace Mowrer.FSWebster.CLI
 
-open System
 open System.Globalization
 open System.IO
 open CsvHelper
-open CsvHelper.Configuration
 open Mowrer.FSWebster.Shared
 
 module Main =
@@ -21,7 +19,20 @@ module Main =
         
         let seatDistribution = Webster.apportionSeats populations 8
                 
-        records |> Seq.iteri (fun idx entry -> printfn $"%s{entry.Name} with %d{entry.Population} folks gets %d{seatDistribution[idx]} seats")
+        let outputRecords = records |> Array.mapi (fun index record ->
+                let outRecord = OutputEntry()
+                outRecord.Name <- record.Name
+                outRecord.Population <- record.Population
+                outRecord.Seats <- seatDistribution[index]
+        
+                outRecord)
+        
+        use writer = new StreamWriter("out.csv")
+        use csvWriter = new CsvWriter(writer, CultureInfo.InvariantCulture)
+        
+        csvWriter.Context.RegisterClassMap<OutputEntryMap>() |> ignore
+        csvWriter.WriteRecords outputRecords
+        
         0
         
         
