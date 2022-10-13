@@ -8,6 +8,9 @@
     <ItemGroup>
         <Compile Include="InputEntry.fs" />
         <Compile Include="Program.fs" />
+        <Content Include="test.csv">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
