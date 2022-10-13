@@ -13,4 +13,8 @@
       <ProjectReference Include="..\Mowrer.FSWebster.Shared\Mowrer.FSWebster.Shared.fsproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="CsvHelper" Version="29.0.0" />
+    </ItemGroup>
+
 </Project>
