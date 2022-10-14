@@ -4,6 +4,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mowrer.FSWebster.CLI", "Mow
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mowrer.FSWebster.Shared", "Mowrer.FSWebster.Shared\Mowrer.FSWebster.Shared.fsproj", "{1A00863F-0ACC-472E-ADC5-5710E9C7434B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Mowrer.FSWebster.Testing", "Mowrer.FSWebster.Testing\Mowrer.FSWebster.Testing.fsproj", "{2A9A215A-55EA-443F-8E22-08083EE44F45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1A00863F-0ACC-472E-ADC5-5710E9C7434B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A00863F-0ACC-472E-ADC5-5710E9C7434B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A00863F-0ACC-472E-ADC5-5710E9C7434B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A9A215A-55EA-443F-8E22-08083EE44F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9A215A-55EA-443F-8E22-08083EE44F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9A215A-55EA-443F-8E22-08083EE44F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9A215A-55EA-443F-8E22-08083EE44F45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
